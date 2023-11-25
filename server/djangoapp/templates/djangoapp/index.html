@@ -21,6 +21,7 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="{% url 'djangoapp:index' %}">Dealership Review</a>
+                <a class="navbar-light" href="{% url 'djangoapp:about' %}">About</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
@@ -44,6 +45,9 @@
             </ul>
         </div>
     </nav>
+    <div>
+        <a class="btn btn-primary" href="{% url 'djangoapp:contact' %}">Contact Us</a>
+    </div>
 
     <!--Add a dealer table here -->
 
